@@ -12,6 +12,13 @@ services:
     ports:
       - "6543:5432"
 
+  mongo:
+    image: mongo:4.4.3
+    volumes:
+      - ./tmp/mongodata:/data/db/data
+    ports:
+      - "27017:27017"
+
   redis:
     image: 'redis:7.0.8'
     command: redis-server

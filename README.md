@@ -6,9 +6,9 @@ This project is a scratch for dockerized rails application
     - `complete` is a setup with rails, postgress, mongo, redis and sidekiq images
     - `mongo-only` is a setup with rails, mongo, redis and sidekiq images
     - `postgress-only` is a setup with rails, postgress, redis and sidekiq images
-    - Or use `mover.sh` to move the files like: `mover.sh "complete"`
-- Replace `scratch` in docker-files to the name of your application (or use `renamer.sh` like: `renamer.sh "name_of_project"`)
-- Delete the folders that you didn't use
+    - Or use `mover.sh` to move the files like: `./mover.sh "complete"`
+- Replace `scratch` in docker-files to the name of your application (or use `renamer.sh` like: `./renamer.sh "name_of_project"`)
+- Delete the folders that you didn't use (or use `remover.sh` like `./remover.sh`)
 - Run one of commands of initializing commands on *Initializing commands*
 - Run `docker-compose build`
 - Run `docker-compose up` to start application

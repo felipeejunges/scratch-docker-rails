@@ -1,15 +1,16 @@
 # scratch-docker-rails
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/felipeejunges/scratch-docker-rails/blob/master/README.pt-br.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/felipeejunges/scratch-docker-rails/blob/master/README.md)
+
 This project is a scratch for dockerized rails application
 
 ## How use this repo
-- Move `Dockerfile` and `docker-compose.yml` to root from one of this folders:
-    - `complete` is a setup with rails, postgress, mongo, redis and sidekiq images
-    - `mongo-only` is a setup with rails, mongo, redis and sidekiq images
-    - `postgress-only` is a setup with rails, postgress, redis and sidekiq images
-    - Or use `mover.sh` to move the files like: `./mover.sh "complete"`
-- Replace `scratch` in docker-files to the name of your application (or use `renamer.sh` like: `./renamer.sh "name_of_project"`)
-- Delete the folders that you didn't use (or use `remover.sh` like `./remover.sh`)
+- Mova os arquivos `Dockerfile` e `docker-compose.yml` para a pasta raiz de um das pastas:
+    - `complete` é uma configuração com rails, postgress, mongo, redis e sidekiq
+    - `mongo-only` é uma configuração com rails, mongo, redis e sidekiq
+    - `postgress-only` é uma configuração com rails, postgress, redis e sidekiq 
+    - Ou use `mover.sh` para mover os arquivos, exemplo: `./mover.sh "complete"`
+- Renomeie `scratch` com o nome da sua aplicação os arquivos relacionados ao docker (ou use `renamer.sh`, exemplo: `./renamer.sh "name_of_project"`)
+- Delete os arquivos/pastas não necessários (ou use `remover.sh`, exemplo: `./remover.sh`)
 - Run one of commands of initializing commands on *Initializing commands*
 - Run `docker-compose build`
 - Run `docker-compose up` to start application

@@ -1,0 +1,13 @@
+---
+:concurrency: 5
+:queues:
+  - high_priority
+  - default
+  - low_priority
+:scheduler:
+  :schedule:
+    example_job:
+      enabled: true
+      cron: "0 1 * * *"
+      queue: high_priority
+      class: ExampleJob
